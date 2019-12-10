@@ -4,7 +4,7 @@ const Park = function(name, ticketPrice, collectionOfDinos){
   this.collectionOfDinos = collectionOfDinos;
 }
 
-Park.prototype.add = function(dino) {
+Park.prototype.addDino = function(dino) {
   this.collectionOfDinos.push(dino);
 }
 
