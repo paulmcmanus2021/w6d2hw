@@ -31,7 +31,13 @@ Park.prototype.numberBySpecies = function(species){
       }
     return total;
 }
-// Park.prototype.calculateVisitorsDaily = function() {
+Park.prototype.calculateVisitorsDaily = function() {
+  let total = 0;
+    for (var dino of this.collectionOfDinos) {
+      total += dino.guestsAttractedPerDay
+    }
+  return total;
+};
 
 
 

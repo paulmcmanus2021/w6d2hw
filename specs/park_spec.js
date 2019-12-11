@@ -54,15 +54,18 @@ describe('Park', function() {
       assert.strictEqual(actual, 1)
     });
 
-    // it('should be able to calculate the total number of visitors per day', function() {
-    //   //Act
-    //   expected = 110
-    //   //Assert that actual is equal to the total number of dinosaurs in the standard array
-    //   assert.strictEqual(park.calculateVisitorsDaily(), expected)
-    // });
-    //
-    // it('should be able to calculate the total number of visitors per year');
-    //
+    it('should be able to calculate the total number of visitors per day', function() {
+      //Act
+      expected = 110
+      //Assert that actual is equal to the total of all dinosaurs visitors number
+      assert.strictEqual(park.calculateVisitorsDaily(), expected)
+    });
+
+    it('should be able to calculate the total number of visitors per year', function(){
+
+    
+    });
+
     // it('should be able to calculate total revenue for one year');
 
   });
