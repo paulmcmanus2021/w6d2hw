@@ -62,10 +62,16 @@ describe('Park', function() {
     });
 
     it('should be able to calculate the total number of visitors per year', function(){
-
-    
+      //This should be the daily visitors x 365 = 40150
+    expected = 40150
+      //assert that calculateVisitorsYearly equals expected
+      assert.strictEqual(park.calculateVisitorsYearly(), expected)
     });
 
-    // it('should be able to calculate total revenue for one year');
+    it('should be able to calculate total revenue for one year', function () {
+      //This should take our yearly visitor number and multiply it by ticket price
+      expected = 401500
+      assert.strictEqual(park.annualRevenue(), expected)
+    });
 
   });

@@ -39,6 +39,25 @@ Park.prototype.calculateVisitorsDaily = function() {
   return total;
 };
 
+Park.prototype.calculateVisitorsYearly = function() {
+  let daily = 0;
+    for (var dino of this.collectionOfDinos){
+      daily += dino.guestsAttractedPerDay
+    }
+    annual = daily * 365;
+    return annual
+}
+
+Park.prototype.annualRevenue = function () {
+  let annualRevenue = 0;
+  let daily = 0;
+  for (var dino of this.collectionOfDinos){
+    daily += dino.guestsAttractedPerDay
+  }
+  annual = daily * 365;
+  revenue = annual * this.ticketPrice;
+  return revenue;
+}
 
 
 
